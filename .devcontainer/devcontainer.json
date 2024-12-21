@@ -8,7 +8,13 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"editor.tabSize": 4,
+				"editor.formatOnSave": true,
+				"files.autoSave": "afterDelay",
+				"editor.renderWhitespace": "all",
+				"editor.fontSize": 16
+			  },
 			"extensions": [
                 "DEVSENSE.phptools-vscode",
 				"streetsidesoftware.code-spell-checker"
