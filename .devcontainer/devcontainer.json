@@ -1,0 +1,21 @@
+{
+    "name": "php development environment",
+    "dockerComposeFile": "docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "php-container",
+
+    // Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+                "DEVSENSE.phptools-vscode",
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	},
+
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "composer install"
+}
